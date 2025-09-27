@@ -3,23 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatbot</title>
+  <title>Luxury Chatbot</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <div class="chat-container">
-    <div class="chat-header">ಹುಲಿ.AI ✨</div>
-    <div class="chat-messages" id="chat-messages"></div>
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="logo">
+        <i data-lucide="bot"></i>ROX.AI
+      </div>
+      <button id="theme-toggle" class="theme-btn"><i data-lucide="moon"></i></button>
+    </div>
 
-    <div class="chat-input-container">
-      <input type="file" id="image-input" accept="image/*" hidden>
-      <button class="icon-btn" id="image-button">📷</button>
-      <input type="text" id="user-input" placeholder="Type your message...">
-      <button class="icon-btn" id="send-button">➤</button>
+    <!-- Messages -->
+    <div id="chat-messages" class="chat-messages"></div>
+
+    <!-- Input -->
+    <div class="chat-input">
+      <input id="user-input" type="text" placeholder="Type a message..." />
+      <input id="image-input" type="file" accept="image/*" hidden />
+      <button id="image-button" class="icon-btn"><i data-lucide="image"></i></button>
+      <button id="send-button" class="icon-btn"><i data-lucide="send"></i></button>
     </div>
   </div>
 
   <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
-
