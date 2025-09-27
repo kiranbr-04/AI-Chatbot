@@ -1,5 +1,5 @@
 const API_URL = "https://api.openai.com/v1/chat/completions";
-const API_KEY = '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'; // 🔑 Replace with your real key
+const API_KEY = ''; // 🔑 Replace with your real key
 
 const chatMessages = document.getElementById("chat-messages");
 const userInput = document.getElementById("user-input");
@@ -161,4 +161,5 @@ imageInput.addEventListener("change", () => {
     reader.readAsDataURL(imageInput.files[0]);
   }
 });
+
 
