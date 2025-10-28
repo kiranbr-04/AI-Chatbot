@@ -161,3 +161,4 @@ imageInput.addEventListener("change", () => {
     reader.readAsDataURL(imageInput.files[0]);
   }
 });
+
