@@ -44,6 +44,7 @@ body.dark {
   animation: fadeUp 0.7s ease;
 }
 
+
 body.light .chat-container {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(180, 180, 180, 0.35); /* Premium soft silver border */
@@ -286,3 +287,4 @@ body.dark #user-input:focus {
   .bubble { max-width: 85%; font-size: 0.9rem; }
   #user-input { font-size: 0.9rem; }
 }
+
